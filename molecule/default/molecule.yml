@@ -1,0 +1,11 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: podman
+platforms:
+  - name: test
+provisioner:
+  name: ansible
+verifier:
+  name: ansible

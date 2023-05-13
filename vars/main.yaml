@@ -1,0 +1,7 @@
+vms: "{{ vm|split }}"
+vm_name: "{{ vms[0] }}"
+vm_p: "{{vms[1] }}"
+vm_params: "{{vm_p|split('/')}}"
+vm_CPU: "{{vm_params[0]}}"
+vm_MEM: "{{vm_params[1]}}"
+vm_HDD: "{{vm_params[2]}}"

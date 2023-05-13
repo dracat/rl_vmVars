@@ -1,0 +1,12 @@
+---
+- name: Converge
+  hosts: all
+  gather_facts: false
+
+  tasks:
+    - name: "Include hw-ansible"
+      ansible.builtin.include_role:
+        name: "hw-ansible"
+      vars:
+        # user: "admin"
+        vm: "p-proxy01 4/8/300"

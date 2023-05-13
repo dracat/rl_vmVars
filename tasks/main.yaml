@@ -1,0 +1,8 @@
+---
+- name: general information
+  debug:
+    msg: " {{ ansible_facts }}@{{ansible_host}} via {{ansible_connection}}  "
+- name: split    
+  debug:
+    msg: "name: {{vm_name}} params: {{vm_CPU}} core {{vm_MEM}}Gb {{vm_HDD}}Gb"
+    
